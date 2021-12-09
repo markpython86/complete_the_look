@@ -1,0 +1,12 @@
+.DS_Store
+src/dataset/data/fashion/
+src/dataset/data/STL-Dataset/
+src/dataset/data/complete-the-look-dataset/
+src/dataset/data/fashion_v2/
+__pycache__
+src/images
+.metals
+.vscode
+dataset_metadata_big.csv
+dataset_metadata_stl-big.csv
+src/features/product_features_big*
