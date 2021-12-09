@@ -6,6 +6,7 @@ dependencies:
   - python=3.9.7
   - numpy
   - pyyaml
+  - pip
   - matplotlib
   - scipy=1.6.2
   - future=0.18.2
