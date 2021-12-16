@@ -20,15 +20,16 @@ def handle_input(input: int):
     )
     return fig
 
-st.title('Complete The Look Project')
-product_id_input = st.number_input("Product ID", min_value=0, max_value=38109, value=140)
+st.title('Show Similar Products')
+product_id_input = st.number_input("Product ID", min_value=0, max_value=38109, value=140, help='You can enter any product number in range 1 to 35000.')
+st.caption('Enter product number in range 1 to 35000.')
 col1, col2 = st.columns(2)
 submit_btn = col1.button("Submit")
-ballon_btn = col2.button("What's This?")
+# ballon_btn = col2.button("What's This?")
 if submit_btn:
     fig = handle_input(product_id_input)
     with st.container():
         st.pyplot(fig)
 
-if ballon_btn:
-  st.balloons()
+# if ballon_btn:
+#   st.balloons()
